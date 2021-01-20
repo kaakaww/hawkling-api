@@ -13,8 +13,9 @@ class ModelTestCase(TestCase):
 
     def setUp(self):
         """Define the test client and other test variables."""
+        user = User.objects.create(username="nerd") 
         self.bucketlist_name = "Write world class code"
-        self.bucketlist = Bucketlist(name=self.bucketlist_name)
+        self.bucketlist = Bucketlist(name=self.bucketlist_name, owner=user)
 
     def test_model_can_create_a_bucketlist(self):
         """Test the bucketlist model can create a bucketlist."""
