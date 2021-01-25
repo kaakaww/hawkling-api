@@ -11,11 +11,27 @@ $ cd hawkling-api
 $ pip3 install -r requirements.txt
 ```
 
+Generate Django Secret Key and copy value
+```shell
+$ cd hawklingAPI/hawklingAPI
+$ python manage.py shell
+>>> from django.core.management.utils import get_random_secret_key
+>>> get_random_secret_key()
+'randomly generated key value'
+>>> exit()
+
+Create an environment file for storing your Django secret key
+```shell
+$ cd hawklingAPI/
+$ touch .env
+$ echo DJANGO_KEY=VALUE_FROM_ABOVE >> .env
+```
+
 ### Running Locally
 
 To run the API service directly, run:
 ```shell
-$ cd hawklingAPI/hawklingAPI
+$ cd ..
 $ python manage.py runserver
 ```
 
