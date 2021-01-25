@@ -22,4 +22,9 @@ $ python manage.py runserver
 The API service will listen on 0.0.0.0 and port 8000. You can reach the app at [http://localhost:8000/](http://localhost:8000/).
 
 
-
+### API Routes
+| **Action** |            **Path**           |   **Route Type**  |                     **Details**                         |
+|:----------:|:-----------------------------:|:-----------------:|:-------------------------------------------------------:|
+|     GET    |             /                 |      public       |                 Hawkling API HOME                       |
+|     POST   |          login/               |      public       |  Login accepts username/password and returns JWT token  |
+|     GET    |        kaakaww/               |     protected     |       Requires JWT token to display greeting            |
