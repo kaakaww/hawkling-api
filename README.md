@@ -11,7 +11,7 @@ $ cd hawkling-api
 $ pip3 install -r requirements.txt
 ```
 
-Generate Django Secret Key and copy value
+Generate Django secret key and copy value to be used in the next step
 ```shell
 $ cd hawklingAPI/hawklingAPI
 $ python manage.py shell
