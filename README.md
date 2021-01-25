@@ -7,6 +7,7 @@ A minimal authenticated Django API for HawkScan authentication testing.
 ### Prerequisites
 This app has been tested with Python 3.9.1 To install Python module prerequisites, run:
 ```shell
+$ cd hawkling-api
 $ pip3 install -r ./requirements.txt
 ```
 
@@ -14,6 +15,7 @@ $ pip3 install -r ./requirements.txt
 
 To run the API service directly, navigate run:
 ```shell
+$ cd hawklingAPI/hawklingAPI
 $ python manage.py runserver
 ```
 
