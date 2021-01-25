@@ -19,6 +19,7 @@ $ python manage.py shell
 >>> get_random_secret_key()
 'randomly generated key value'
 >>> exit()
+```
 
 Create an environment file for storing your Django secret key
 ```shell
