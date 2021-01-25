@@ -8,12 +8,12 @@ A minimal authenticated Django API for HawkScan authentication testing.
 This app has been tested with Python 3.9.1 To install Python module prerequisites, run:
 ```shell
 $ cd hawkling-api
-$ pip3 install -r ./requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ### Running Locally
 
-To run the API service directly, navigate run:
+To run the API service directly, run:
 ```shell
 $ cd hawklingAPI/hawklingAPI
 $ python manage.py runserver
@@ -25,6 +25,6 @@ The API service will listen on 0.0.0.0 and port 8000. You can reach the app at [
 ### API Routes
 | **Action** |            **Path**           |   **Route Type**  |                     **Details**                         |
 |:----------:|:-----------------------------:|:-----------------:|:-------------------------------------------------------:|
-|     GET    |             /                 |      public       |                 Hawkling API HOME                       |
+|     GET    |             /                 |      public       |                 Hawkling API home                       |
 |     POST   |          login/               |      public       |  Login accepts username/password and returns JWT token  |
 |     GET    |        kaakaww/               |     protected     |       Requires JWT token to display greeting            |
