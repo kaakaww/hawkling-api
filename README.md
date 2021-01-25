@@ -11,21 +11,12 @@ $ cd hawkling-api
 $ pip3 install -r requirements.txt
 ```
 
-Generate Django secret key and copy value to be used in the next step
-```shell
-$ cd hawklingAPI/hawklingAPI
-$ python manage.py shell
->>> from django.core.management.utils import get_random_secret_key
->>> get_random_secret_key()
-'randomly generated key value'
->>> exit()
-```
 
 Create an environment file for storing your Django secret key
 ```shell
-$ cd hawklingAPI/
+$ cd hawklingAPI/hawlingAPI/hawklingAPI
 $ touch .env
-$ echo DJANGO_KEY=VALUE_FROM_ABOVE >> .env
+$ echo DJANGO_KEY=$(python -c "import secrets; print(secrets.token_urlsafe())") >> .env
 ```
 
 ### Running Locally
