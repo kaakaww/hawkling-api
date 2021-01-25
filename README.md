@@ -44,7 +44,7 @@ The API service will listen on 0.0.0.0 and port 8000. You can reach the app at [
 |:----------:|:-----------------------------:|:-----------------:|:-------------------------------------------------------:|
 |     GET    |             /                 |      public       |                 Hawkling API home                       |
 |     POST   |          login/               |      public       |  Login accepts username/password and returns JWT token  |
-|     GET    |        kaakaww/               |     protected     |       Requires JWT token to display greeting            |
+|     GET    |        kaakaww/               |     protected     |       Requires Bearer token to display greeting         |
 
 
 ### Request Credentials
