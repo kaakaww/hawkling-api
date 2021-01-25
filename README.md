@@ -12,7 +12,7 @@ $ pip3 install -r requirements.txt
 ```
 
 
-Create Django secret key and store in environment file
+Create your Django secret key and store in an environment file
 ```shell
 $ cd hawklingAPI/hawlingAPI/hawklingAPI
 $ touch .env
