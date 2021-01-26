@@ -1,0 +1,24 @@
+app:
+    applicationId: xxXXXXXX-xXXX-xxXX-XXxX-xXXxxXXXXxXX
+    env: Development
+    host: http://localhost:8000
+    authentication:
+      loggedInIndicator: ".*message.*"
+      loggedOutIndicator: ".*detail.*"
+      usernamePassword:
+        type: JSON
+        loginPath: /login/
+        usernameField: username
+        passwordField: password
+        scanUsername: admin
+        scanPassword: adminpassword
+      tokenExtraction:
+        type: TOKEN_PATH
+        value: "access"
+      tokenAuthorization:
+        type: HEADER
+        value: Authorization
+        tokenType: Bearer
+      testPath:
+        path: /kaakaww/
+        success: ".*200.*"
